@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//e/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/**)"
+    ]
+  }
+}

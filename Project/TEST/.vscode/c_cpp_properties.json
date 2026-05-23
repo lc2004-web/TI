@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "MSPM0G3507",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/Debug",
+                "E:/TI/CCS/mspm0_sdk_2_10_00_04/source",
+                "E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include"
+            ],
+            "defines": [
+                "__MSPM0G3507__",
+                "__USE_SYSCONFIG__"
+            ],
+            "compilerPath": "E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmclang.exe",
+            "cStandard": "c11",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
