@@ -31,6 +31,24 @@
                 "name": "TEST",
                 "resourceId": "/TEST"
             }
+        },
+        {
+            "name": "OLED调试成功 - 副本",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "OLED调试成功 - 副本",
+                "resourceId": "/OLED调试成功 - 副本"
+            }
+        },
+        {
+            "name": "OLED_6_13",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "OLED_6_13",
+                "resourceId": "/OLED_6_13"
+            }
         }
     ]
 }

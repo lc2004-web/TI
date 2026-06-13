@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "empty",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "empty",
+                "resourceId": "/empty"
+            }
+        },
+        {
+            "name": "OLED调试成功",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "OLED调试成功",
+                "resourceId": "/OLED调试成功"
+            }
+        },
+        {
+            "name": "OLED调试成功 - 副本",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "OLED调试成功 - 副本",
+                "resourceId": "/OLED调试成功 - 副本"
+            }
+        }
+    ]
+}
