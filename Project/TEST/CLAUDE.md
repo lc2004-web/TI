@@ -29,7 +29,7 @@ This is a bare-metal embedded project for the **TI MSPM0G3507** microcontroller 
 ## Pin Assignments
 
 | Pin  | Function     | Notes                          |
-| PA0  | GPIO Output  | LED                            |
+| PA14 | GPIO Output  | LED (高电平亮)                  |
 | PA19 | SWDIO        | Debug data (J101 13:14 ON)     |
 | PA20 | SWCLK        | Debug clock (J101 15:16 ON)    |
 

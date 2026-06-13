@@ -35,9 +35,8 @@
 int main(void)
 {
     SYSCFG_DL_init();
-    DL_GPIO_togglePins(LED_PORT, LED_PIN_0_PIN);
+    DL_GPIO_setPins(LED_PORT, LED_PIN_14_PIN);
     while (1) {
-        
-
+        /* PA14 high → LED on */
     }
 }
