@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "empty",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "empty",
+                "resourceId": "/empty"
+            }
+        },
+        {
+            "name": "OLED_6_13",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "OLED_6_13",
+                "resourceId": "/OLED_6_13"
+            }
+        },
+        {
+            "name": "MPU6050",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MPU6050",
+                "resourceId": "/MPU6050"
+            }
+        }
+    ]
+}

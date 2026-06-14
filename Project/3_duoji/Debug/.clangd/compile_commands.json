@@ -1,0 +1,47 @@
+[
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/BSP/bsp_oled.c"
+   },
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/BSP/bsp_siic.c"
+   },
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/BSP/delay.c"
+   },
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/BSP/inv_mpu.c"
+   },
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/BSP/inv_mpu_dmp_motion_driver.c"
+   },
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/Debug/ti_msp_dl_config.c"
+   },
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/empty.c"
+   },
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/BSP/bsp_imu.c"
+   },
+   {
+      "directory" : "E:/TI/TI/Project/3_duoji/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -D__USE_SYSCONFIG__ -I\"E:/TI/TI/Project/3_duoji\" -I\"E:/TI/TI/Project/3_duoji/Debug\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"E:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"E:/TI/TI/Project/3_duoji/BSP\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "E:/TI/TI/Project/3_duoji/BSP/bsp_servo.c"
+   }
+]
