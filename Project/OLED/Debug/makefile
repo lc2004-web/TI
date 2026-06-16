@@ -119,20 +119,20 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-OLED调试成功.out 
+OLED.out 
 
 EXE_OUTPUTS__QUOTED += \
-"OLED调试成功.out" 
+"OLED.out" 
 
 
 # All Target
 all: $(OBJS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "OLED调试成功.out"
+	@$(MAKE) --no-print-directory -Onone "OLED.out"
 
 # Tool invocations
-OLED调试成功.out: $(OBJS) $(GEN_CMDS)
+OLED.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Arm Linker - building target: "$@"'
-	"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wall -Wl,-m"OLED调试成功.map" -Wl,-i"E:/TI/CCS/mspm0_sdk_2_10_00_04/source" -Wl,-i"E:/TI/TI/Project/OLED" -Wl,-i"E:/TI/TI/Project/OLED/Debug/syscfg" -Wl,-i"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="OLED调试成功_linkInfo.xml" -Wl,--rom_model -o "OLED调试成功.out" $(ORDERED_OBJS)
+	"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wall -Wl,-m"OLED.map" -Wl,-i"E:/TI/CCS/mspm0_sdk_2_10_00_04/source" -Wl,-i"E:/TI/TI/Project/OLED" -Wl,-i"E:/TI/TI/Project/OLED/Debug/syscfg" -Wl,-i"E:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="OLED_linkInfo.xml" -Wl,--rom_model -o "OLED.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 

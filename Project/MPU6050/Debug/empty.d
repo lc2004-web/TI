@@ -83,9 +83,7 @@ empty.o: ../empty.c ti_msp_dl_config.h \
  E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h \
  E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h \
  E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h \
- ../BSP/bsp_oled.h E:/TI/TI/Project/MPU6050/BSP/bsp_siic.h \
- E:/TI/TI/Project/MPU6050/BSP/inv_mpu.h \
- E:/TI/TI/Project/MPU6050/BSP/inv_mpu_dmp_motion_driver.h
+ ../BSP/bsp_servo.h
 ti_msp_dl_config.h:
 E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
 E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h:
@@ -169,7 +167,4 @@ E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_vref.h:
 E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h:
 E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h:
 E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h:
-../BSP/bsp_oled.h:
-E:/TI/TI/Project/MPU6050/BSP/bsp_siic.h:
-E:/TI/TI/Project/MPU6050/BSP/inv_mpu.h:
-E:/TI/TI/Project/MPU6050/BSP/inv_mpu_dmp_motion_driver.h:
+../BSP/bsp_servo.h:

@@ -2,28 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "empty",
-            "type": "ccs-debug",
-            "request": "launch",
-            "projectInfo": {
-                "name": "empty",
-                "resourceId": "/empty"
-            },
-            "connections": [
-                {
-                    "name": "Texas Instruments XDS110 USB Debug Probe",
-                    "cores": [
-                        {
-                            "name": "CORTEX_M0P",
-                            "debuggerSettings": {
-                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "TEST",
             "type": "ccs-debug",
             "request": "launch",
@@ -49,6 +27,59 @@
                 "name": "OLED_6_13",
                 "resourceId": "/OLED_6_13"
             }
+        },
+        {
+            "name": "LED",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "LED",
+                "resourceId": "/LED"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M0P",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OLED_IIC",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "OLED_IIC",
+                "resourceId": "/OLED_IIC"
+            }
+        },
+        {
+            "name": "TB6612",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "TB6612",
+                "resourceId": "/TB6612"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M0P",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

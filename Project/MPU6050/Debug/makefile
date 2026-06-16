@@ -13,7 +13,9 @@ ORDERED_OBJS += \
 "./empty.o" \
 "./ti_msp_dl_config.o" \
 "./startup_mspm0g350x_ticlang.o" \
+"./BSP/bsp_imu.o" \
 "./BSP/bsp_oled.o" \
+"./BSP/bsp_servo.o" \
 "./BSP/bsp_siic.o" \
 "./BSP/delay.o" \
 "./BSP/inv_mpu.o" \
@@ -143,8 +145,8 @@ OLED_6_13.out: $(OBJS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "BSP\bsp_oled.o" "BSP\bsp_siic.o" "BSP\delay.o" "BSP\inv_mpu.o" "BSP\inv_mpu_dmp_motion_driver.o" 
-	-$(RM) "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "BSP\bsp_oled.d" "BSP\bsp_siic.d" "BSP\delay.d" "BSP\inv_mpu.d" "BSP\inv_mpu_dmp_motion_driver.d" 
+	-$(RM) "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "BSP\bsp_imu.o" "BSP\bsp_oled.o" "BSP\bsp_servo.o" "BSP\bsp_siic.o" "BSP\delay.o" "BSP\inv_mpu.o" "BSP\inv_mpu_dmp_motion_driver.o" 
+	-$(RM) "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "BSP\bsp_imu.d" "BSP\bsp_oled.d" "BSP\bsp_servo.d" "BSP\bsp_siic.d" "BSP\delay.d" "BSP\inv_mpu.d" "BSP\inv_mpu_dmp_motion_driver.d" 
 	-@echo ' '
 
 .PHONY: all clean dependents

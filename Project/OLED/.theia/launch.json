@@ -11,6 +11,15 @@
             }
         },
         {
+            "name": "OLED",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "OLED",
+                "resourceId": "/OLED"
+            }
+        },
+        {
             "name": "OLED调试成功",
             "type": "ccs-debug",
             "request": "launch",
