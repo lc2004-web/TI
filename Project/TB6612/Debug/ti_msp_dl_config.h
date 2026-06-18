@@ -139,6 +139,34 @@ extern "C" {
 /* Defines for BIN2: GPIOA.17 with pinCMx 39 on package pin 32 */
 #define DC_MOTOR_BIN2_PIN                                       (DL_GPIO_PIN_17)
 #define DC_MOTOR_BIN2_IOMUX                                      (IOMUX_PINCM39)
+/* Defines for GS1: GPIOA.27 with pinCMx 60 on package pin 47 */
+#define GRAY_SENSOR_GS1_PORT                                             (GPIOA)
+#define GRAY_SENSOR_GS1_PIN                                     (DL_GPIO_PIN_27)
+#define GRAY_SENSOR_GS1_IOMUX                                    (IOMUX_PINCM60)
+/* Defines for GS2: GPIOA.12 with pinCMx 34 on package pin 27 */
+#define GRAY_SENSOR_GS2_PORT                                             (GPIOA)
+#define GRAY_SENSOR_GS2_PIN                                     (DL_GPIO_PIN_12)
+#define GRAY_SENSOR_GS2_IOMUX                                    (IOMUX_PINCM34)
+/* Defines for GS3: GPIOA.18 with pinCMx 40 on package pin 33 */
+#define GRAY_SENSOR_GS3_PORT                                             (GPIOA)
+#define GRAY_SENSOR_GS3_PIN                                     (DL_GPIO_PIN_18)
+#define GRAY_SENSOR_GS3_IOMUX                                    (IOMUX_PINCM40)
+/* Defines for GS4: GPIOB.3 with pinCMx 16 on package pin 15 */
+#define GRAY_SENSOR_GS4_PORT                                             (GPIOB)
+#define GRAY_SENSOR_GS4_PIN                                      (DL_GPIO_PIN_3)
+#define GRAY_SENSOR_GS4_IOMUX                                    (IOMUX_PINCM16)
+/* Defines for GS5: GPIOB.9 with pinCMx 26 on package pin 23 */
+#define GRAY_SENSOR_GS5_PORT                                             (GPIOB)
+#define GRAY_SENSOR_GS5_PIN                                      (DL_GPIO_PIN_9)
+#define GRAY_SENSOR_GS5_IOMUX                                    (IOMUX_PINCM26)
+/* Defines for GS6: GPIOA.9 with pinCMx 20 on package pin 17 */
+#define GRAY_SENSOR_GS6_PORT                                             (GPIOA)
+#define GRAY_SENSOR_GS6_PIN                                      (DL_GPIO_PIN_9)
+#define GRAY_SENSOR_GS6_IOMUX                                    (IOMUX_PINCM20)
+/* Defines for GS7: GPIOB.19 with pinCMx 45 on package pin 38 */
+#define GRAY_SENSOR_GS7_PORT                                             (GPIOB)
+#define GRAY_SENSOR_GS7_PIN                                     (DL_GPIO_PIN_19)
+#define GRAY_SENSOR_GS7_IOMUX                                    (IOMUX_PINCM45)
 
 
 /* clang-format on */
