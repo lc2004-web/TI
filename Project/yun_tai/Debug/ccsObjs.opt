@@ -1,0 +1,13 @@
+"./empty.o"
+"./ti_msp_dl_config.o"
+"./startup_mspm0g350x_ticlang.o"
+"./bsp/Emm_V5.o"
+"./bsp/bsp_pid.o"
+"./bsp/bsp_servo.o"
+"./bsp/bsp_uart1.o"
+"./bsp/delay.o"
+"./bsp/fifo.o"
+"./bsp/usart.o"
+-l"./device_linker.cmd"
+-ldevice.cmd.genlibs
+-llibc.a

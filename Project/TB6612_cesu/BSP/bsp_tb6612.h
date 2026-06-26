@@ -37,8 +37,8 @@
  * Motor direction invert — set to 1 if CW/CCW is reversed on that motor.
  * This depends on motor +/- wiring order.
  */
-#define MOTOR_A_DIR_INVERT  1   /* 0=normal, 1=swap CW/CCW */
-#define MOTOR_B_DIR_INVERT  0
+#define MOTOR_A_DIR_INVERT  0   /* 0=normal, 1=swap CW/CCW */
+#define MOTOR_B_DIR_INVERT  1
 
 /**
  * @brief  Initialize motor (start PWM timer, set duty to 0)

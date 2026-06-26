@@ -83,7 +83,7 @@ empty.o: ../empty.c ti_msp_dl_config.h \
  E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_wwdt.h \
  E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h \
  E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h \
- ../BSP/bsp_imu.h ../BSP/bsp_oled.h
+ ../BSP/bsp_imu.h ../BSP/bsp_oled.h ../BSP/inv_mpu.h ../BSP/bsp_siic.h
 ti_msp_dl_config.h:
 E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
 E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h:
@@ -169,3 +169,5 @@ E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_interrupt.h:
 E:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_systick.h:
 ../BSP/bsp_imu.h:
 ../BSP/bsp_oled.h:
+../BSP/inv_mpu.h:
+../BSP/bsp_siic.h:
