@@ -33,8 +33,8 @@
 #include "bsp/Emm_V5.h"
 
 /**
- * @brief   Emm_V5.0 Stepper Motor Library — Function Demo
- *          Each stage runs briefly so you can observe the motor's response.
+ * @brief   Emm_V5.0 Stepper Motor Library — 缓慢转半圈
+ *          只执行一次，不重复
  */
 int main(void)
 {
@@ -43,43 +43,13 @@ int main(void)
     NVIC_EnableIRQ(UART_0_INST_INT_IRQN);
     delay_ms(500);  // wait for driver power-up
 
+    //=== 缓慢正转半圈: 60 RPM × 600ms ≈ 0.5 rev ===//
+    Emm_V5_Vel_Control(1, 0, 60, 20, 0);
+    delay_ms(600);
+    Emm_V5_Stop_Now(1, 0);
+
     while(1)
     {
-        //=== 1. Velocity Mode: CW 60 RPM, 1.5s ===//
-        Emm_V5_Vel_Control(1, 0, 60, 20, 0);
-        delay_ms(1500);
-
-        //=== 2. Stop ===//
-        Emm_V5_Stop_Now(1, 0);
-        delay_ms(500);
-
-        //=== 3. Velocity Mode: CCW 250 RPM, 1.5s ===//
-        Emm_V5_Vel_Control(1, 1, 250, 60, 0);
-        delay_ms(1500);
-
-        //=== 4. Stop ===//
-        Emm_V5_Stop_Now(1, 0);
-        delay_ms(500);
-
-        //=== 5. Quick Position: +3200 pulses (1 rev), 500 RPM ===//
-        Emm_V5_Set_QPos_Params(1, 500, 40, 1, 0);
-        delay_ms(10);
-        Emm_V5_QPos_Control(1, 3200);
-        delay_ms(1500);
-
-        //=== 6. Quick Position: -3200 pulses (back) ===//
-        Emm_V5_QPos_Control(1, -3200);
-        delay_ms(1500);
-
-        //=== 7. Full Position: CW 6400 pulses (2 rev), 400 RPM ===//
-        Emm_V5_Pos_Control(1, 0, 400, 50, 6400, 1, 0);
-        delay_ms(2000);
-
-        //=== 8. Full Position: CCW 6400 pulses ===//
-        Emm_V5_Pos_Control(1, 1, 400, 50, 6400, 1, 0);
-        delay_ms(2000);
-
-        //=== 9. Pause, then repeat ===//
-        delay_ms(1000);
+        // 空闲
     }
 }

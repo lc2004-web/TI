@@ -17,6 +17,7 @@ typedef struct {
     float prev_error;     /* Previous error (for derivative)           */
     float integral_max;   /* Anti-windup: max integral magnitude       */
     float output_max;     /* Output clamping: max output magnitude     */
+    float d_max;          /* Per-cycle D-term clamp (防量化尖峰)        */
 } PID_Controller_t;
 
 /**
@@ -26,9 +27,11 @@ typedef struct {
  * @param  setpoint     Target value
  * @param  integral_max Anti-windup limit (max absolute integral)
  * @param  output_max   Output clamp limit (max absolute output)
+ * @param  d_max        Per-cycle derivative clamp (0=no limit)
  */
 void PID_Init(PID_Controller_t *pid, float Kp, float Ki, float Kd,
-              float setpoint, float integral_max, float output_max);
+              float setpoint, float integral_max, float output_max,
+              float d_max);
 
 /**
  * @brief  Compute PID output

@@ -7,7 +7,8 @@
 #include "pid.h"
 
 void PID_Init(PID_Controller_t *pid, float Kp, float Ki, float Kd,
-              float setpoint, float integral_max, float output_max)
+              float setpoint, float integral_max, float output_max,
+              float d_max)
 {
     pid->Kp           = Kp;
     pid->Ki           = Ki;
@@ -17,44 +18,43 @@ void PID_Init(PID_Controller_t *pid, float Kp, float Ki, float Kd,
     pid->prev_error   = 0.0f;
     pid->integral_max = integral_max;
     pid->output_max   = output_max;
+    pid->d_max        = d_max;
 }
 
 float PID_Compute(PID_Controller_t *pid, float measurement, float dt)
 {
-    float error, p_term, i_term, d_term, output;
+    /* 参考 循迹小车练习: 固定周期PID, dt已嵌入增益
+     *   P = Kp * error
+     *   I = Ki * sum(error)
+     *   D = Kd * (error - prev_error)
+     *   无 dt 缩放, 杜绝传感器量化尖峰被 1/dt 放大
+     */
+    float error = pid->setpoint - measurement;
+    float p_term, i_term, d_term, output;
 
-    /* 1. Compute error */
-    error = pid->setpoint - measurement;
-
-    /* 2. Proportional term */
+    /* P */
     p_term = pid->Kp * error;
 
-    /* 3. Integral term (with anti-windup clamping) */
-    pid->integral += pid->Ki * error * dt;
-    if (pid->integral > pid->integral_max) {
+    /* I: 累加误差 (无 dt), 抗饱和 */
+    pid->integral += error;
+    if (pid->integral > pid->integral_max)
         pid->integral = pid->integral_max;
-    } else if (pid->integral < -pid->integral_max) {
+    else if (pid->integral < -pid->integral_max)
         pid->integral = -pid->integral_max;
-    }
-    i_term = pid->integral;
+    i_term = pid->Ki * pid->integral;
 
-    /* 4. Derivative term (derivative on measurement,
-     *    avoids "derivative kick" on setpoint changes) */
-    if (dt > 0.0001f) {
-        d_term = pid->Kd * (error - pid->prev_error) / dt;
-    } else {
-        d_term = 0.0f;
+    /* D: 误差差分 (无 dt 除法), 加限幅 */
+    d_term = pid->Kd * (error - pid->prev_error);
+    if (pid->d_max > 0.0f) {
+        if (d_term > pid->d_max)       d_term = pid->d_max;
+        else if (d_term < -pid->d_max) d_term = -pid->d_max;
     }
     pid->prev_error = error;
 
-    /* 5. Sum and clamp output */
+    /* 求和 + 输出限幅 */
     output = p_term + i_term + d_term;
-
-    if (output > pid->output_max) {
-        output = pid->output_max;
-    } else if (output < -pid->output_max) {
-        output = -pid->output_max;
-    }
+    if (output > pid->output_max)       output = pid->output_max;
+    else if (output < -pid->output_max) output = -pid->output_max;
 
     return output;
 }
